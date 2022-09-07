@@ -1,0 +1,116 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.nav__logo-container {
+  width: 3rem;
+  height: 3rem;
+}
+.nav__btn {
+  background-color: #030303;
+}
+
+.header__title {
+  color: #030303;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+}
+.header__title-container {
+  margin-bottom: 2rem;
+}
+.header__description {
+  font-size: 1rem;
+  line-height: 26px;
+  padding: 0 1.8125rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, minmax(-webkit-min-content, -webkit-max-content));
+  grid-template-rows: repeat(5, minmax(min-content, max-content));
+  grid-row-gap: 1.5rem;
+  row-gap: 1.5rem;
+  grid-column-gap: 1.5rem;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.menu__item {
+  border-radius: 8px;
+}
+.menu__item:first-child {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  background-color: #755cde;
+}
+.menu__item:first-child .menu__item-img {
+  width: 8rem;
+  margin-bottom: 5.875rem;
+}
+.menu__item:nth-child(2) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: #f6a560;
+}
+.menu__item:nth-child(2) .menu__item-img {
+  width: 4rem;
+  margin-bottom: 2.5rem;
+}
+.menu__item:nth-child(3) {
+  grid-column: 2/-1;
+  grid-row: 2/3;
+  background-color: #f39e9e;
+}
+.menu__item:nth-child(3) .menu__item-img {
+  width: 4rem;
+  margin-bottom: 2.5rem;
+}
+.menu__item:nth-child(4) {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  background-color: #eb7565;
+}
+.menu__item:nth-child(4) .menu__item-img {
+  width: 8rem;
+  margin-bottom: 1rem;
+}
+.menu__item:nth-child(5) {
+  grid-column: 1/-1;
+  grid-row: 4/5;
+  background-color: #61c4b7;
+}
+.menu__item:nth-child(5) .menu__item-img {
+  width: 10rem;
+  margin-bottom: 1.5rem;
+}
+.menu__item:nth-child(6) {
+  grid-column: 1/-1;
+  grid-row: 5/-1;
+  background-color: #552049;
+}
+.menu__item:nth-child(6) .menu__item-img {
+  width: 8rem;
+  margin-bottom: 2.5rem;
+}
+.menu__item-img {
+  grid-row: 1/2;
+  justify-self: end;
+}
+.menu__link {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, minmax(-webkit-min-content, -webkit-max-content));
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  padding: 1.5rem;
+}
+.menu__link span {
+  grid-row: 2/-1;
+  justify-self: start;
+  color: #fff7f0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=Header.css.map */

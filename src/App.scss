@@ -1,0 +1,84 @@
+@use './sass/mixins';
+@use './sass/variables';
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+*:focus {
+  outline: dotted 5px #ffd60a;
+  outline-offset: 1px;
+}
+
+body {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-family: variables.$font-primary;
+  font-size: 0.875rem;
+  font-weight: variables.$font-weight-medium;
+  color: variables.$color-dark-gray;
+  background-color: variables.$color-background;
+  text-align: center;
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+.btn {
+  font-weight: variables.$font-weight-bold;
+  color: variables.$color-background;
+  line-height: 28px;
+  padding: 0.5rem 1.75rem;
+  border-radius: 3.5rem;
+  display: inline-block;
+}
+.wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}

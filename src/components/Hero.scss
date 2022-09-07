@@ -1,0 +1,28 @@
+@use '../sass/mixins';
+@use '../sass/variables';
+
+.hero {
+  &-container {
+    padding-top: 6.25rem;
+    margin-bottom: 6.25rem;
+  }
+  &__img-container {
+    width: 18.75rem;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+  }
+  &__title {
+    font-size: 1.625rem;
+    color: variables.$color-black;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  &__description {
+    font-size: 1rem;
+    line-height: 26px;
+    margin-bottom: 1.5rem;
+  }
+  &__btn {
+    background-color: variables.$color-illustrations;
+  }
+}

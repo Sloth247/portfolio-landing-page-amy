@@ -1,0 +1,115 @@
+@use '../sass/mixins';
+@use '../sass/variables';
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  &__logo-container {
+    width: 3rem;
+    height: 3rem;
+  }
+  &__btn {
+    background-color: variables.$color-black;
+  }
+}
+.header {
+  &__title {
+    color: variables.$color-black;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    &-container {
+      margin-bottom: 2rem;
+    }
+  }
+  &__description {
+    font-size: 1rem;
+    line-height: 26px;
+    padding: 0 1.8125rem;
+  }
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, minmax(min-content, max-content));
+  grid-row-gap: 1.5rem;
+  row-gap: 1.5rem;
+  grid-column-gap: 1.5rem;
+  column-gap: 1.5rem;
+
+  &__item {
+    border-radius: 8px;
+    &:first-child {
+      grid-column: 1/-1;
+      grid-row: 1/2;
+      background-color: variables.$color-graphic;
+      & .menu__item-img {
+        width: 8rem;
+        margin-bottom: 5.875rem;
+      }
+    }
+    &:nth-child(2) {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      background-color: variables.$color-ui;
+      & .menu__item-img {
+        width: 4rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+    &:nth-child(3) {
+      grid-column: 2/-1;
+      grid-row: 2/3;
+      background-color: variables.$color-apps;
+      & .menu__item-img {
+        width: 4rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+    &:nth-child(4) {
+      grid-column: 1/-1;
+      grid-row: 3/4;
+      background-color: variables.$color-illustrations;
+      & .menu__item-img {
+        width: 8rem;
+        margin-bottom: 1rem;
+      }
+    }
+    &:nth-child(5) {
+      grid-column: 1/-1;
+      grid-row: 4/5;
+      background-color: variables.$color-photography;
+      & .menu__item-img {
+        width: 10rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+    &:nth-child(6) {
+      grid-column: 1/-1;
+      grid-row: 5/-1;
+      background-color: variables.$color-motion;
+      & .menu__item-img {
+        width: 8rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+    &-img {
+      grid-row: 1/2;
+      justify-self: end;
+    }
+  }
+  &__link {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
+    padding: 1.5rem;
+    & span {
+      grid-row: 2/-1;
+      justify-self: start;
+      color: variables.$color-background;
+      font-size: 1.5rem;
+      font-weight: variables.$font-weight-bold;
+    }
+  }
+}

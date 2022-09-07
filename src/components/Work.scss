@@ -1,0 +1,37 @@
+@use '../sass/mixins';
+@use '../sass/variables';
+.work {
+  &__title {
+    color: variables.$color-black;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+.splide__track--nav > .splide__list > .splide__slide.is-active.is-visible {
+  border: none;
+}
+.splide__track--nav > .splide__list > .splide__slide {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.splide__arrows {
+  display: flex;
+  justify-content: center;
+}
+.splide__arrows > .splide__arrow {
+  top: calc(100% + 2rem);
+  background: variables.$color-black;
+  width: 4rem;
+  height: 4rem;
+  opacity: 1;
+  & svg {
+    fill: variables.$color-background;
+  }
+
+  &.splide__arrow--prev {
+    left: auto;
+  }
+  &.splide__arrow--next {
+    right: auto;
+  }
+}
